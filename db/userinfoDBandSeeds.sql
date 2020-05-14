@@ -12,6 +12,25 @@ CREATE TABLE user_info (
   PRIMARY KEY (id)
 );
 
+CREATE TABLE user_accounts (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NULL,
+  email VARCHAR(45) NULL,
+  about_me VARCHAR(500) NULL,
+  height_ft INT() NULL,
+  height_inch INT() NULL, 
+  weight_lbs INT() NULL,
+  goal VARCHAR(100) NULL, 
+  celebrity_choice 
+  PRIMARY KEY (id)
+)
+
+CREATE TABLE celebrity_choice (
+  id INT NOT NULL AUTO_INCREMENT,
+
+  PRIMARY KEY (id)
+)
+
 INSERT INTO user_info (name, email, phone)
 VALUES ("jane", jellyjane@gmail.com, 8007886669);
 
