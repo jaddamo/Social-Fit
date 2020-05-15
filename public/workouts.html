@@ -1,122 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2</title>
 
-     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
-    <!-- CSS Stylesheet -->
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<head>
+  <meta charset="UTF-8">
+  <title>Social Fit</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
+
 <body>
-    <nav class="teal accent-4" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Insert Logo Here</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">Navbar Link</a></li>
-          </ul>
-    
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Navbar</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
-      <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-          <br><br>
-          <h1 class="header center blue-grey-text">Starter Template</h1>
-          <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+  <!-- Navbar -->
+  <nav>
+    <div class="teal nav-wrapper">
+      <a href="#" class="brand-logo"></a>
+      <img src="./assets/proj_images/socialfit2.png" id="logo" alt="">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Homepage</a></li>
+        <li><a href="badges.html">Nutrition</a></li>
+        <li><a href="collapsible.html">Friends</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Jumbotron -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12" id="head" style="text-align: center; padding-top: 25px;">
+        <div class="col s2"> <img src="assets/proj_images/breakfast_lunch_dinner.jpg" alt="flying_eagle"
+            class="f oodimage circle responsive-img"> Important Meals</div>
+        <div class="col s2"> <img src="assets/proj_images/veggie.jpeg" alt="flying_eagle"
+            class="foodimage circle responsive-img">Vegetarian</div>
+        <div class="col s2"> <img src="assets/proj_images/protein.jpg" alt="flying_eagle"
+            class="foodimage circle responsive-img">Protein</div>
+        <div class="col s2"> <img src="assets/proj_images/keto2.jpeg" alt="flying_eagle"
+            class="foodimage circle responsive-img">Keto</div>
+        <div class="col s2"> <img src="assets/proj_images/lowcarb2.jpg" alt="flying_eagle"
+            class="foodimage circle responsive-img">Low Carb</div>
+        <div class="col s2"> <img src="assets/proj_images/ethnic.jpeg" alt="flying_eagle"
+            class="foodimage circle responsive-img">Ethnic Foods</div>
+      </div>
+    </div>
+  </div>
+<!-- Jumbotron -->
+
+  <!-- Main Row -->
+
+  <!-- Weekly Recommendations -->
+  <!-- <div class="container"> -->
+  <div class="row" class="main">
+    <h4 style="text-align: start;">Weekly Recommendations</h4>
+
+    <div class="col s9">
+      <div class="row">
+        <div class="offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="./assets/proj_images/eyeoftiger.png" alt="eye_of_tiger" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-3">Get Started</a>
-          </div>
-          <br><br>
-    
         </div>
       </div>
-    
-    
+      <div class="row">
+        <div class="offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="./assets/proj_images/eyeoftiger.png" alt="eye_of_tiger" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="./assets/proj_images/eyeoftiger.png" alt="eye_of_tiger" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="./assets/proj_images/eyeoftiger.png" alt="eye_of_tiger" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- Weekly Recommendations -->
+    <!-- Quick Link -->
+    <div class="col s3 quicklink" style="padding-left: 25px;">
+      <div class="row">
+        <div class="card-panel teal lighten-5 z-depth-1">
+          <h5 style="text-align:center;">Quick Links</h5>
+          <span class="black-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto minus voluptatem magni, vitae quo
+            dolorem
+            perferendis illum labore atque libero quidem, consectetur officia, beatae enim doloremque tempora velit
+            harum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam dolores reiciendis, a quam libero
+            doloremque, ipsa doloribus eos dolore vero animi, mollitia ab aperiam officiis ducimus consequatur. Ipsa,
+            eius?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis reprehenderit a aut officia
+            veritatis repellat vero quasi laborum, natus nulla velit nesciunt quis autem doloribus tenetur laudantium
+            amet enim.
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-panel teal lighten-5 z-depth-1">
+          <h5 style="text-align:center;">Quick Links</h5>
+          <span class="black-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto minus voluptatem magni, vitae quo
+            dolorem
+            perferendis illum labore atque libero quidem, consectetur officia, beatae enim doloremque tempora velit
+            harum.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Quick Link -->
+  <!-- </div> -->
+  <!-- Main Row -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue-grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like
+            it's our full time job. Any amount would help support and continue development on this project
+            and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
       <div class="container">
-        <div class="section">
-    
-          <!--   Icon Section   -->
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center blue-grey-text darken-3"><i class="material-icons">flash_on</i></h2>
-                <h5 class="center">Speeds up development</h5>
-    
-                <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-              </div>
-            </div>
-    
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center blue-grey-text darken-3"><i class="material-icons">group</i></h2>
-                <h5 class="center">User Experience Focused</h5>
-    
-                <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-              </div>
-            </div>
-    
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center blue-grey-text darken-3"><i class="material-icons">settings</i></h2>
-                <h5 class="center">Easy to work with</h5>
-    
-                <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-              </div>
-            </div>
-          </div>
-    
-        </div>
-        <br><br>
+        Made by <a class="teal-text accent-4 text-accent-3" href="http://materializecss.com">Ed, Jane,
+          Shaminder, Joe</a>
       </div>
-    
-      <footer class="page-footer blue-grey darken-3">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Company Bio</h5>
-              <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-    
-    
-            </div>
-            <div class="col l3 s12">
-              <h5 class="white-text">Settings</h5>
-              <ul>
-                <li><a class="white-text" href="#!">Link 1</a></li>
-                <li><a class="white-text" href="#!">Link 2</a></li>
-                <li><a class="white-text" href="#!">Link 3</a></li>
-                <li><a class="white-text" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-            <div class="col l3 s12">
-              <h5 class="white-text">Connect</h5>
-              <ul>
-                <li><a class="white-text" href="#!">Link 1</a></li>
-                <li><a class="white-text" href="#!">Link 2</a></li>
-                <li><a class="white-text" href="#!">Link 3</a></li>
-                <li><a class="white-text" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container">
-          Made by <a class="teal-text accent-4 text-accent-3" href="http://materializecss.com">Ed, Jane, Shaminder, Joe</a>
-          </div>
-        </div>
-      </footer>
-    
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     <!-- JS Style -->
-     <script src="css/js/init.js"></script>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
