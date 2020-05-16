@@ -2,34 +2,235 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <title>Social Fit</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="./members.html" class="brand-logo"><img src="./assets/proj_images/socialfit2.png" id="logo" alt=""></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="./accolades.html">Accolades</a></li>
+        <li><a href="./workouts.html">Workouts</a></li>
+        <li><a href="./nutrition.html">Nutrition</a></li>
+        <li><a href="./followers.html">Followers</a></li>
+      </ul>
     </div>
-  </div>
-</nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+  </nav>
+
+  <div class="row" style="display:flex; justify-content: start;">
+    <div class="col l8" style="padding: 20px;">
+      <h6 style="text-align: start; margin-top: -15px;" class="navtext">Top Fitness Accolades</h6>
+      <div class="row">
+        <div class="col l3"> <a href="./accolades.html"><img class="achieve" src="assets/proj_images/progress1.png" alt="accolade1"></a>
+          <p class="accoladetext">PROGRESS TIER 1</p>
+        </div>
+        <div class="col l3"> <a href="./accolades.html"><img class="achieve" src="assets/proj_images/progress.png" alt="accolade2"></a>
+          <p class="accoladetext">PROGRESS TIER 3</p>
+        </div>
+        <div class="col l3"> <a href="./accolades.html"><img class="achieve" src="assets/proj_images/beastmode1.png" alt="accolade3"></a>
+          <p class="accoladetext">BEAST MODE!</p>
+        </div>
+        <div class="col l3"> <a href="./accolades.html"><img class="achieve" src="assets/proj_images/progress2.png" alt="accolade4"></a>
+          <p class="accoladetext">PROGRESS TIER 2</p>
+        </div>
+      </div>
+      <div class="row">
+        <a class="waves-effect waves-light btn" href="./accolades.html" style="display: flex; justify-content: center;">View All</a>
+      </div>
+      <div class="row" style="padding-top: 20px; display: flex; justify-content: center;">
+        <!-- Promo Content 1 goes here -->
+        <!-- <div class="row"> -->
+        <div class="col s4 settings">
+          <i class="medium material-icons">settings</i>
+        </div>
+        <div class="col s4 settings">
+          <!-- Promo Content 2 goes here -->
+          <i class="medium material-icons">person</i>
+        </div>
+        <div class="col s4 settings">
+          <!-- Promo Content 3 goes here -->
+          <i class="medium material-icons">edit</i>
+          <!-- </div> -->
+        </div>
+      </div>
+      <h4 style="text-align: center;">INSERT INPUT FIELD WITH CHECKLIST API HERE</h4>
+    </div>
+    <div class="col l4" style="padding-top: 70px;">
+      <div class="card">
+        <div class="card-image">
+          <img src="./assets/proj_images/therock.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title" style="text-align: center; font-size: 23px;">Dwayne "The Rock" Johnson</span>
+          <h6 class="age">48 Years Old</h6>
+          <h6 class="aboutme">Former WWE superstar & current movie star.</h6>
+          <h6 class="goal">Just Bring It</h6>
+        </div>
       </div>
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./assets/js/members.js"></script>
+  <!-- Main Row -->
 
+  <!-- Weekly Recommendations -->
+
+  <div class="row" class="main">
+    <div class="col l9">
+      <h4 style="text-align: start;">Leaderboard</h4>
+      <div class="row">
+        <div class="offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="./assets/proj_images/eyeoftiger.png" alt="eye_of_tiger" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="./assets/proj_images/eyeoftiger.png" alt="eye_of_tiger" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="./assets/proj_images/eyeoftiger.png" alt="eye_of_tiger" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2">
+                <img src="./assets/proj_images/eyeoftiger.png" alt="eye_of_tiger" class="circle responsive-img">
+              </div>
+              <div class="col s10">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Weekly Recommendations -->
+    <!-- Quick Link -->
+    <div class="col l3 quicklink" style="padding-left: 25px;">
+      <div class="row">
+        <div class="card-panel teal lighten-5 z-depth-1">
+          <h5 style="text-align:center;">Your Recipes & Workouts</h5>
+          <span class="black-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto minus voluptatem magni, vitae quo
+            dolorem
+            perferendis illum labore atque libero quidem, consectetur officia, beatae enim doloremque tempora velit
+            harum.
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-panel teal lighten-5 z-depth-1">
+          <h5 style="text-align:center;">Following</h5>
+          <span class="black-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto minus voluptatem magni, vitae quo
+            dolorem
+            perferendis illum labore atque libero quidem, consectetur officia, beatae enim doloremque tempora velit
+            harum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ullam dolores reiciendis, a quam libero
+            doloremque, ipsa doloribus eos dolore vero animi, mollitia ab aperiam officiis ducimus consequatur. Ipsa,
+            eius?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis reprehenderit a aut officia
+            veritatis repellat vero quasi laborum, natus nulla velit nesciunt quis autem doloribus tenetur laudantium
+            amet enim.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Quick Link -->
+  <!-- </div> -->
+  <!-- Main Row -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue-grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like
+            it's our full time job. Any amount would help support and continue development on this project
+            and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="teal-text accent-4 text-accent-3" href="http://materializecss.com">Ed, Jane,
+          Shaminder, Joe</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
