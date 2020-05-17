@@ -1,5 +1,5 @@
 // Requiring our models and passport as we've configured it
-var db = require("../models");
+var db = require("../models/index");
 var passport = require("../config/passport");
 console.log(Object.keys(db));
 module.exports = function(app) {
@@ -36,6 +36,7 @@ module.exports = function(app) {
       });
   });
 
+  
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
@@ -57,6 +58,17 @@ module.exports = function(app) {
       });
     }
   });
+
+  app.get("/api/workout", function(req, res) {
+    db.Workout.findAll().then(function(results) {
+      // projects will be an array of all Project instances
+      res.json(results);
+
+    })
+  });
+
+ 
+  
 
   app.get("/api/users", function(req, res) {
     db.User.findAll()

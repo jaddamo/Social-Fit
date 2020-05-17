@@ -16,13 +16,13 @@ module.exports = function(sequelize, DataTypes) {
    
   });
    //Association 
-  //  Favorite.associate = function(models) {
-    // Associating Author with Posts
-    // When an Author is deleted, also delete any associated Posts
-    // Favorite.belongsTo(models.User, {
-    //   foreignKey: {allowNull: false}
-    // });
-  // };
+   Favorite.associate = function(models) {
+    //Associating Author with Posts
+   // When an Author is deleted, also delete any associated Posts
+    Favorite.belongsTo(models.User, {
+      foreignKey: {allowNull: false}
+    });
+  };
 
   return Favorite;
 };
