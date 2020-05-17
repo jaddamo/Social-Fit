@@ -6,7 +6,7 @@ var passport = require("./config/passport");
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
-var db = require("./models");
+var db = require("./models/index");
 
 // Creating express app and configuring middleware needed for authentication
 var app = express();
@@ -26,5 +26,17 @@ require("./routes/api-routes.js")(app);
 db.sequelize.sync({force: "true"}).then(function() {
   app.listen(PORT, function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+    db.Workout_celebrity.create({
+      workout_celebrity_name: "bob",
+      workout_type: "fast" 
+    }).then(y =>{
+      db.Workout.create({ day_of_week: "monday",
+      workout_description: "run" ,
+      WorkoutCelebrityId: 1, }).then(x => {
+        db.Workout.findAll().then(data => {
+          console.log(data)
+        })
+      })
+    })
   });
 });
