@@ -1,8 +1,11 @@
 {
-  "name": "1-Passport-Example",
+  "name": "social-fit",
   "version": "1.0.0",
-  "description": "",
+  "description": "a fitness tracking social media web application",
   "main": "server.js",
+  "engines": {
+    "node": "12.16.2"
+  },
   "scripts": {
     "test": "npm run lint",
     "start": "node server.js",
