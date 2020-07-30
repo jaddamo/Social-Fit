@@ -4,7 +4,7 @@
   "description": "a fitness tracking social media web application",
   "main": "server.js",
   "engines": {
-    "node": "v12.16.2",
+    "node": "v14.7.0",
     "npm": "6.14.5"
   },
   "scripts": {
@@ -12,7 +12,8 @@
     "start": "node server.js",
     "lint": "eslint --quiet .",
     "fix": "eslint --fix .",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
