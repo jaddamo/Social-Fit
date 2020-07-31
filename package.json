@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "a fitness tracking social media web application",
   "main": "server.js",
-  "engines": {
-    "node": "v14.7.0"
-  },
   "scripts": {
     "test": "npm run lint",
     "start": "node server.js",
