@@ -5,19 +5,9 @@ var path = require("path");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
-
-  app.get("/", function(req, res) {
-    // If the user already has an account send them to the members page
-    //req.user ? console.log("\n\n\n", req.user) : console.log("\n\n\nno user");
-    if (req.user) {
-      res.redirect("/members");
-    }
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
-  });
-
   app.get("/login", function(req, res) {
     // If the user already has an account send them to the members page
-    
+
     if (req.user) {
       res.redirect("/members");
     }
@@ -30,4 +20,14 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
+  app.get("/", function(req, res) {
+    // If the user already has an account send them to the members page
+    //req.user ? console.log("\n\n\n", req.user) : console.log("\n\n\nno user");
+    if (req.user) {
+      res.redirect("/members");
+    }
+    res.sendFile(path.join(__dirname, "../index.html"));
+  });
 };
+
+// /Users/Developing/Desktop/Class/FullStack/Social-Fit/public/members.html

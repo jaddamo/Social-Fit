@@ -8,6 +8,10 @@ var passport = require("./config/passport");
 var PORT = process.env.PORT || 8080;
 var db = require("./models/index");
 
+process.on('uncaughtException', function (err) {
+  console.log(err);
+}); 
+
 // Creating express app and configuring middleware needed for authentication
 var app = express();
 app.use(express.urlencoded({ extended: true }));
